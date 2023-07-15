@@ -213,3 +213,4 @@ r=cur.fetchall()
 for i in r:
     print(i)
 con.commit()
+con.close()
