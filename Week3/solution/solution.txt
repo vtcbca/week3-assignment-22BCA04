@@ -194,7 +194,7 @@ import sqlite3 as sql
 con=sql.connect("c://sqlite3//ESM.db")
 cur=con.cursor()
 q7="select * from employee \
-     dept in('Account','Inventory')\
+    where dept in('Account','Inventory')\
      group by dept"
 cur.execute(q7)
 r=cur.fetchall()
